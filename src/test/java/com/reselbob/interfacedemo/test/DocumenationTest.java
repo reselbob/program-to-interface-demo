@@ -12,6 +12,7 @@ public class DocumenationTest {
 	  Document doc = new Document();
 	  OnlineDocument iDoc = new OnlineDocument();
 	  
+	  System.out.println("--Document implementation--\n");
 	  Writable writable = (Writable)(doc);
 	  Storable storable = (Storable)(doc);
 	  String id = "~/home/documents/abc.docx";
@@ -20,6 +21,7 @@ public class DocumenationTest {
 	  writable.setContent(content);
 	  storable.save();
 	  
+	  System.out.println("\n--OnlineDocument implementation--\n");
 	  writable = (Writable)(iDoc);
 	  storable = (Storable)(iDoc);
 	  id = "http://www.example.com/docs?id=SOME_GUID";
